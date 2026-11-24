@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: aliceblue;
+    color:blueviolet;
+
+}
+
+.navbar-brand{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.tarjeta{
+    width: 300px;
+    border: 1px solid blue;
+    background-color:azure;
+    align-items: left;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;
+    
+
+
+}

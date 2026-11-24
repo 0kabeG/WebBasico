@@ -1,0 +1,16 @@
+.tarjeta{
+    width: 300px;
+    border: 1px solid blue;
+    background-color:azure;
+    align-items: left;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;  
+
+}
+
+
+.botones{
+    display: flex;
+    gap: 15px;
+}
