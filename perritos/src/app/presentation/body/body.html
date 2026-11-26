@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="row">
+
+        @for (t of products(); track $index) {
+
+        <div class="col-md-3 mb-4">
+
+            <div class="card h-100">
+
+                <img class="card-img-top" [src]="t.urlImage" alt="">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">{{ t.name }}</h5>
+
+                    <p class="card-text">{{ t.description }}</p>
+
+                    <p class="card-text">
+                        <small class="text-muted">
+                            Vida máxima: {{ t.maxLife }}
+                        </small>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        }
+
+    </div>
+</div>

@@ -1,7 +1,33 @@
-<app-petform
+<div class="container py-4">
+    <div class="row g-4">
+        <div class="col-12 col-lg-4">
+            <app-petform (newPet)="insert($event)">
+            </app-petform>
+        </div>
+        <div class="col-12 col-lg-8">
+            <h2 class="text-center">Mascotas Registradas</h2>
+            <div class="row g-3 ">
+                @for (t of pets(); track $index) {
 
-(newPet)="insert($event)"
+                <div class="col-12 col-md-4">
+                    <app-petcard
+                    [pet]="t"
+                    (namePet)="delete($event)"
+                    >
 
->
 
-</app-petform>
+
+                    </app-petcard>
+                </div>
+                } @empty {
+                    <div class="col-12 alert alert-danger text-danger">
+                        <p>
+                            No hay mascotas registradas, actualmente.
+                        </p>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

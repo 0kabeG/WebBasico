@@ -1,0 +1,10 @@
+<div class="container">
+
+    @for (t of products(); track $index) {
+        <h1> {{t.name}} </h1>
+        <h2> {{t.amount}} </h2>
+        <h2> {{t.description}} </h2>
+        <img src="{{t.urlImage}}" width="150px" alt="">
+    }
+
+</div>
