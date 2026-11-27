@@ -1,0 +1,15 @@
+<div class="container-fluid bg-dark min-vh-100 py-4">
+
+    <div class="row g-4">
+
+        <div class="col-lg-4">
+            <app-personalform (newPersonals)="service.insert($event)"></app-personalform>
+        </div>
+
+        <div class="col-lg-8">
+            <app-personalcard></app-personalcard>
+        </div>
+
+    </div>
+
+</div>

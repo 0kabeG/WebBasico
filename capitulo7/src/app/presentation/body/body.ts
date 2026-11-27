@@ -2,7 +2,7 @@ import { Component, signal, WritableSignal } from '@angular/core';
 import { Pet, Specie } from '../../domain/entities';
 import { Petform } from '../petform/petform';
 import { Petcard } from '../petcard/petcard';
-
+ 
 @Component({
   imports: [Petform, Petcard],
   selector: 'app-body',
@@ -28,3 +28,4 @@ export class Body {
 
 
 }
+

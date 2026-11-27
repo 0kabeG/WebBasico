@@ -1,0 +1,41 @@
+<div class="card border-0 shadow-sm">
+
+    <div class="card-header bg-success text-white">
+
+        <h5 class="mb-0">Registrar personal</h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <form>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre completo" [(ngModel)]="personals().name" name="name">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Grado</label>
+                <input type="text" class="form-control" placeholder="Introduce el grado" [(ngModel)]="personals().rank" name="rank">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Especialidad</label>
+                <input type="text" class="form-control" placeholder="Introduce la especialidad" [(ngModel)]="personals().speciality" name="speciality">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Situación</label>
+                <input type="text" class="form-control" placeholder="Introduce la situación" [(ngModel)]="personals().situation" name="situation">
+            </div>
+
+            <button type="button" class="btn btn-success w-100" (click)="emitPersonals()">
+                Registrar personal
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
